@@ -1,0 +1,133 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --Dark-gray-alfa: hsla(0, 0%, 59%, 0.5);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--Dark-cyan);
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: bottom 30vh right 50vw, top 50vh left 50vw;
+  background-repeat: no-repeat no-repeat;
+}
+
+.card {
+  width: 330px;
+  height: 375px;
+  margin: 170px auto 60px;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 1px 2px 32px -1px rgba(26, 106, 116, 0.76);
+  -webkit-box-shadow: 1px 2px 32px -1px rgba(26, 106, 116, 0.76);
+  -moz-box-shadow: 1px 2px 32px -1px rgba(26, 106, 116, 0.76);
+}
+.card__section {
+  height: 140px;
+  background-image: url(../images/bg-pattern-card.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__image {
+  margin-top: 87px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+}
+
+.card__name {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.card__age {
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+}
+
+.card__country {
+  margin-top: 15px;
+  font-size: 15px;
+  color: var(--Dark-grayish-blue);
+}
+
+.card__social {
+  margin-top: 25px;
+  width: 100%;
+  font-size: 10px;
+  border-top: 1px solid var(--Dark-gray-alfa);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.card__result {
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--Dark-gray);
+}
+
+.card__followers {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
